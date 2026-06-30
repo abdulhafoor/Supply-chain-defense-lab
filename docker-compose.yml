@@ -1,0 +1,48 @@
+services:
+  attacker:
+    image: node:18
+    container_name: attacker
+    working_dir: /app
+    volumes:
+      - ./attacker:/app
+    networks:
+      - labnet
+    command: ["node","server.js"]
+
+  victim:
+    image: node:18
+    container_name: victim
+    working_dir: /app
+    volumes:
+      - ./victim:/app
+    networks:
+      - labnet
+    environment:
+      - EXPECTED_HASHES=bc1ccceea5eb59f68d970155e293657cd59988cbe8d59887edf28dce36cd0bfd,dcc826a9f2d298b2f9b621d2b5cd40ec658ffb720c73ff12083592b8b8b7aa11
+    command: tail -f /dev/null
+
+  monitor:
+    image: node:18
+    container_name: monitor
+    working_dir: /app
+    volumes:
+      - ./monitor:/app
+    networks:
+      - labnet
+    ports:
+      - "3001:3001"
+    command: ["node","alert_receiver.js"]
+
+  dev:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ./:/workspace:cached
+    networks:
+      - labnet
+    command: sleep infinity
+
+networks:
+  labnet:
+    driver: bridge

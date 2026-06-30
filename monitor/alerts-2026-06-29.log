@@ -1,0 +1,5 @@
+[2026-06-29T17:05:56.255Z] ALERT: hash_mismatch
+  Package: http://attacker:8080/packages/benign.tgz
+  Expected: bc1ccceea5eb59f68d970155e293657cd59988cbe8d5988, dcc826a9f2d298b2f9b621d2b5cd40ec658ffb720c73ff12083592b8b8b7aa11
+  Observed: bc1ccceea5eb59f68d970155e293657cd59988cbe8d59887edf28dce36cd0bfd
+
