@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Supply Chain Defense Lab
 
 A containerized cybersecurity lab simulating supply chain attacks and defenses.
@@ -11,3 +12,6 @@ A containerized cybersecurity lab simulating supply chain attacks and defenses.
 ## ⚙️ Setup
 ```bash
 docker compose up --build
+=======
+# Supply-chain-defense-lab
+>>>>>>> b51ffd3082312f2f07e11fa45d1b2176f09c3195
