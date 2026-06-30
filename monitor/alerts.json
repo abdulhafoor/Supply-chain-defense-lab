@@ -1,0 +1,90 @@
+[
+  {
+    "timestamp": "2026-06-30T07:18:15.808Z",
+    "event": "hash_mismatch",
+    "package": "http://attacker:8080/packages/benign.tgz",
+    "expected": [
+      "deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e",
+      "5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17e"
+    ],
+    "observed": "3cba5f3c0ba2a50da17d70a9102a3db3ce1db1799351117962f53ec8ee66c479",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-06-30T07:18:16.232Z",
+    "event": "hash_mismatch",
+    "package": "http://attacker:8080/packages/tampered.tgz",
+    "expected": [
+      "deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e",
+      "5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17e"
+    ],
+    "observed": "8bca3b447af10f653095cc20bff97256ca365136074271f3edc55b9264999bed",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-06-30T07:22:57.433Z",
+    "event": "hash_mismatch",
+    "package": "http://attacker:8080/packages/benign.tgz",
+    "expected": [
+      "deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e",
+      "5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17e"
+    ],
+    "observed": "3cba5f3c0ba2a50da17d70a9102a3db3ce1db1799351117962f53ec8ee66c479",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-06-30T07:22:57.846Z",
+    "event": "hash_mismatch",
+    "package": "http://attacker:8080/packages/tampered.tgz",
+    "expected": [
+      "deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e",
+      "5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17e"
+    ],
+    "observed": "8bca3b447af10f653095cc20bff97256ca365136074271f3edc55b9264999bed",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-06-30T07:25:01.551Z",
+    "event": "hash_mismatch",
+    "package": "http://attacker:8080/packages/benign.tgz",
+    "expected": [
+      "deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e",
+      "5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17e"
+    ],
+    "observed": "3cba5f3c0ba2a50da17d70a9102a3db3ce1db1799351117962f53ec8ee66c479",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-06-30T07:25:01.942Z",
+    "event": "hash_mismatch",
+    "package": "http://attacker:8080/packages/tampered.tgz",
+    "expected": [
+      "deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e",
+      "5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17e"
+    ],
+    "observed": "8bca3b447af10f653095cc20bff97256ca365136074271f3edc55b9264999bed",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-06-30T07:27:47.153Z",
+    "event": "hash_mismatch",
+    "package": "http://attacker:8080/packages/benign.tgz",
+    "expected": [
+      "deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e",
+      "5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17e"
+    ],
+    "observed": "3cba5f3c0ba2a50da17d70a9102a3db3ce1db1799351117962f53ec8ee66c479",
+    "severity": "INFO"
+  },
+  {
+    "timestamp": "2026-06-30T07:27:47.488Z",
+    "event": "hash_mismatch",
+    "package": "http://attacker:8080/packages/tampered.tgz",
+    "expected": [
+      "deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e",
+      "5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17e"
+    ],
+    "observed": "8bca3b447af10f653095cc20bff97256ca365136074271f3edc55b9264999bed",
+    "severity": "INFO"
+  }
+]

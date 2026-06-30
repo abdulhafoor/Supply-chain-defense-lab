@@ -15,10 +15,13 @@ services:
     working_dir: /app
     volumes:
       - ./victim:/app
+      - ./attacker/benign.tgz:/app/benign.tgz
+      - ./attacker/tampered.tgz:/app/tampered.tgz
     networks:
       - labnet
     environment:
-      - EXPECTED_HASHES=bc1ccceea5eb59f68d970155e293657cd59988cbe8d59887edf28dce36cd0bfd,dcc826a9f2d298b2f9b621d2b5cd40ec658ffb720c73ff12083592b8b8b7aa11
+      - EXPECTED_HASHES=deeaf0230de192d2a1c3e2e668f2935a6f63b86769ff490446b5c0448066950e,5867b044bb0ff89ba3df28d409c7893208f5c948d79818f868697f04db87b17ev
+      
     command: tail -f /dev/null
 
   monitor:

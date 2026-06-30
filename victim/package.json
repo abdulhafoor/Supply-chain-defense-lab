@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "attacker": "file:tampered.tgz"
+  }
+}
